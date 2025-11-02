@@ -1,0 +1,74 @@
+{
+  "name": "04 - Onboarding Assets",
+  "width": 390,
+  "height": 844,
+  "elements": [
+    {
+      "type": "rectangle",
+      "x": 40,
+      "y": 100,
+      "width": 310,
+      "height": 350,
+      "borderRadius": 16,
+      "colorToken": "color.card.start"
+    },
+    {
+      "type": "text",
+      "content": "Assets:",
+      "x": 165,
+      "y": 140,
+      "fontSize": 18,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "Cash (liquid)",
+      "x": 125,
+      "y": 190,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "Investments (liquid v illiquid)",
+      "x": 75,
+      "y": 240,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "Property (% ownership)",
+      "x": 90,
+      "y": 290,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "Other (car, other)",
+      "x": 115,
+      "y": 340,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "button",
+      "x": 40,
+      "y": 720,
+      "width": 310,
+      "height": 56,
+      "borderRadius": 28,
+      "colorToken": "color.accent.primary",
+      "shadowToken": "shadow.button"
+    },
+    {
+      "type": "text",
+      "content": "Next",
+      "x": 175,
+      "y": 738,
+      "fontSize": 18,
+      "colorToken": "color.text.button"
+    }
+  ]
+}

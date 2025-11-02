@@ -1,0 +1,100 @@
+{
+  "name": "03 - Onboarding Income",
+  "width": 390,
+  "height": 844,
+  "elements": [
+    {
+      "type": "text",
+      "content": "2/5",
+      "x": 30,
+      "y": 60,
+      "fontSize": 14,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "rectangle",
+      "x": 30,
+      "y": 85,
+      "width": 140,
+      "height": 4,
+      "borderRadius": 2,
+      "colorToken": "color.accent.primary",
+      "shadowToken": "shadow.button"
+    },
+    {
+      "type": "text",
+      "content": "$",
+      "x": 155,
+      "y": 120,
+      "fontSize": 64,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "What's your",
+      "x": 110,
+      "y": 220,
+      "fontSize": 28,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "income?",
+      "x": 140,
+      "y": 255,
+      "fontSize": 28,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "rectangle",
+      "x": 60,
+      "y": 305,
+      "width": 270,
+      "height": 56,
+      "borderRadius": 12,
+      "colorToken": "color.card.start"
+    },
+    {
+      "type": "text",
+      "content": "A$  $65,000",
+      "x": 80,
+      "y": 323,
+      "fontSize": 20,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "You earn 44% more than the",
+      "x": 80,
+      "y": 390,
+      "fontSize": 12,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "text",
+      "content": "Australian median ($45,000)",
+      "x": 80,
+      "y": 408,
+      "fontSize": 12,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "button",
+      "x": 60,
+      "y": 720,
+      "width": 270,
+      "height": 56,
+      "borderRadius": 28,
+      "colorToken": "color.accent.primary",
+      "shadowToken": "shadow.button"
+    },
+    {
+      "type": "text",
+      "content": "Next",
+      "x": 175,
+      "y": 738,
+      "fontSize": 18,
+      "colorToken": "color.text.button"
+    }
+  ]
+}

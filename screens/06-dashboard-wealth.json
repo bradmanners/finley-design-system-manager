@@ -1,0 +1,173 @@
+{
+  "name": "06 - Dashboard - Wealth Navigator",
+  "width": 390,
+  "height": 844,
+  "elements": [
+    {
+      "type": "text",
+      "content": "Wealth Navigator",
+      "x": 115,
+      "y": 80,
+      "fontSize": 20,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "G'day Sarah!",
+      "x": 115,
+      "y": 115,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "rectangle",
+      "x": 120,
+      "y": 160,
+      "width": 150,
+      "height": 150,
+      "borderRadius": 75,
+      "colorToken": "color.accent.primary",
+      "shadowToken": "shadow.button"
+    },
+    {
+      "type": "text",
+      "content": "Your",
+      "x": 165,
+      "y": 200,
+      "fontSize": 14,
+      "colorToken": "color.text.onColor"
+    },
+    {
+      "type": "text",
+      "content": "Wealth Score",
+      "x": 145,
+      "y": 218,
+      "fontSize": 14,
+      "colorToken": "color.text.onColor"
+    },
+    {
+      "type": "text",
+      "content": "72",
+      "x": 170,
+      "y": 245,
+      "fontSize": 42,
+      "colorToken": "color.text.onColor"
+    },
+    {
+      "type": "text",
+      "content": "You vs Australia",
+      "x": 80,
+      "y": 340,
+      "fontSize": 14,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "text",
+      "content": "$85k",
+      "x": 80,
+      "y": 365,
+      "fontSize": 28,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "Net Worth",
+      "x": 80,
+      "y": 400,
+      "fontSize": 12,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "text",
+      "content": "$45k",
+      "x": 230,
+      "y": 365,
+      "fontSize": 28,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "Average",
+      "x": 230,
+      "y": 400,
+      "fontSize": 12,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "button",
+      "x": 60,
+      "y": 460,
+      "width": 85,
+      "height": 90,
+      "borderRadius": 16,
+      "colorToken": "color.accent.primary",
+      "shadowToken": "shadow.button"
+    },
+    {
+      "type": "text",
+      "content": "Make a",
+      "x": 75,
+      "y": 495,
+      "fontSize": 12,
+      "colorToken": "color.text.button"
+    },
+    {
+      "type": "text",
+      "content": "Decision",
+      "x": 70,
+      "y": 510,
+      "fontSize": 12,
+      "colorToken": "color.text.button"
+    },
+    {
+      "type": "button",
+      "x": 155,
+      "y": 460,
+      "width": 85,
+      "height": 90,
+      "borderRadius": 16,
+      "colorToken": "color.accent.secondary"
+    },
+    {
+      "type": "text",
+      "content": "Track",
+      "x": 178,
+      "y": 495,
+      "fontSize": 12,
+      "colorToken": "color.text.button"
+    },
+    {
+      "type": "text",
+      "content": "Progress",
+      "x": 168,
+      "y": 510,
+      "fontSize": 12,
+      "colorToken": "color.text.button"
+    },
+    {
+      "type": "button",
+      "x": 250,
+      "y": 460,
+      "width": 85,
+      "height": 90,
+      "borderRadius": 16,
+      "colorToken": "color.header.start"
+    },
+    {
+      "type": "text",
+      "content": "Learn",
+      "x": 273,
+      "y": 495,
+      "fontSize": 12,
+      "colorToken": "color.text.button"
+    },
+    {
+      "type": "text",
+      "content": "More",
+      "x": 273,
+      "y": 510,
+      "fontSize": 12,
+      "colorToken": "color.text.button"
+    }
+  ]
+}

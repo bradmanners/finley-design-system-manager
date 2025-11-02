@@ -1,0 +1,121 @@
+{
+  "name": "20 - Wealth Projection Survey",
+  "width": 390,
+  "height": 844,
+  "elements": [
+    {
+      "type": "text",
+      "content": "Survey how happy are u with",
+      "x": 70,
+      "y": 140,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "your wealth projection?",
+      "x": 80,
+      "y": 165,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "Do you want to change",
+      "x": 90,
+      "y": 190,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "anything?",
+      "x": 150,
+      "y": 215,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "Priorities:",
+      "x": 150,
+      "y": 265,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "1. super",
+      "x": 155,
+      "y": 300,
+      "fontSize": 14,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "2. Home ownership",
+      "x": 120,
+      "y": 330,
+      "fontSize": 14,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "3. Education fund kids",
+      "x": 110,
+      "y": 360,
+      "fontSize": 14,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "4. House deposit kids",
+      "x": 110,
+      "y": 390,
+      "fontSize": 14,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "5. Type and auto suggest",
+      "x": 105,
+      "y": 420,
+      "fontSize": 14,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "options, but make it",
+      "x": 125,
+      "y": 440,
+      "fontSize": 14,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "customisable",
+      "x": 145,
+      "y": 460,
+      "fontSize": 14,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "button",
+      "x": 70,
+      "y": 720,
+      "width": 250,
+      "height": 56,
+      "borderRadius": 28,
+      "colorToken": "color.accent.primary",
+      "shadowToken": "shadow.button"
+    },
+    {
+      "type": "text",
+      "content": "Continue",
+      "x": 160,
+      "y": 738,
+      "fontSize": 18,
+      "colorToken": "color.text.button"
+    }
+  ]
+}

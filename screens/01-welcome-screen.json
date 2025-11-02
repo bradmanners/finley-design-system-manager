@@ -1,0 +1,65 @@
+{
+  "name": "01 - Welcome Screen",
+  "width": 390,
+  "height": 844,
+  "elements": [
+    {
+      "type": "text",
+      "content": "Build Your Wealth,",
+      "x": 40,
+      "y": 300,
+      "fontSize": 32,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "One Decision at",
+      "x": 70,
+      "y": 340,
+      "fontSize": 32,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "a Time",
+      "x": 130,
+      "y": 380,
+      "fontSize": 32,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "Compare your choices against 16M",
+      "x": 50,
+      "y": 440,
+      "fontSize": 14,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "text",
+      "content": "Australians and see your financial future",
+      "x": 40,
+      "y": 460,
+      "fontSize": 14,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "button",
+      "x": 40,
+      "y": 720,
+      "width": 310,
+      "height": 56,
+      "borderRadius": 28,
+      "colorToken": "color.accent.primary",
+      "shadowToken": "shadow.button"
+    },
+    {
+      "type": "text",
+      "content": "Get Started",
+      "x": 150,
+      "y": 738,
+      "fontSize": 18,
+      "colorToken": "color.text.button"
+    }
+  ]
+}

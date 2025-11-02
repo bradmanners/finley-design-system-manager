@@ -1,0 +1,133 @@
+{
+  "name": "18 - Progress Tracking",
+  "width": 390,
+  "height": 844,
+  "elements": [
+    {
+      "type": "text",
+      "content": "Your Wealth",
+      "x": 50,
+      "y": 80,
+      "fontSize": 24,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "35% COMPLETE",
+      "x": 50,
+      "y": 120,
+      "fontSize": 12,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "rectangle",
+      "x": 50,
+      "y": 140,
+      "width": 120,
+      "height": 6,
+      "borderRadius": 3,
+      "colorToken": "color.accent.primary"
+    },
+    {
+      "type": "text",
+      "content": "Current net worth",
+      "x": 50,
+      "y": 170,
+      "fontSize": 14,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "text",
+      "content": "$85k",
+      "x": 250,
+      "y": 170,
+      "fontSize": 20,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "Started journey",
+      "x": 120,
+      "y": 240,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "First $10k saved",
+      "x": 120,
+      "y": 290,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "Super optimized",
+      "x": 120,
+      "y": 340,
+      "fontSize": 16,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "text",
+      "content": "House deposit ready",
+      "x": 120,
+      "y": 390,
+      "fontSize": 16,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "text",
+      "content": "First investment",
+      "x": 120,
+      "y": 440,
+      "fontSize": 16,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "rectangle",
+      "x": 90,
+      "y": 235,
+      "width": 20,
+      "height": 20,
+      "borderRadius": 10,
+      "colorToken": "color.accent.primary"
+    },
+    {
+      "type": "rectangle",
+      "x": 90,
+      "y": 285,
+      "width": 20,
+      "height": 20,
+      "borderRadius": 10,
+      "colorToken": "color.accent.primary"
+    },
+    {
+      "type": "rectangle",
+      "x": 90,
+      "y": 335,
+      "width": 20,
+      "height": 20,
+      "borderRadius": 10,
+      "colorToken": "color.card.start"
+    },
+    {
+      "type": "rectangle",
+      "x": 90,
+      "y": 385,
+      "width": 20,
+      "height": 20,
+      "borderRadius": 10,
+      "colorToken": "color.card.start"
+    },
+    {
+      "type": "rectangle",
+      "x": 90,
+      "y": 435,
+      "width": 20,
+      "height": 20,
+      "borderRadius": 10,
+      "colorToken": "color.card.start"
+    }
+  ]
+}

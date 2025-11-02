@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Finley AI Design System Manager</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 12px;
+      background: #ffffff;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .header {
+      padding: 16px;
+      border-bottom: 1px solid #E5E5E5;
+      background: #F8F9FA;
+    }
+
+    h1 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #000000;
+    }
+
+    .subtitle {
+      font-size: 11px;
+      color: #666666;
+      margin-top: 4px;
+    }
+
+    .tabs {
+      display: flex;
+      border-bottom: 1px solid #E5E5E5;
+      background: #ffffff;
+    }
+
+    .tab {
+      flex: 1;
+      padding: 12px;
+      text-align: center;
+      font-size: 11px;
+      font-weight: 500;
+      color: #666666;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+    }
+
+    .tab:hover {
+      background: #F8F9FA;
+    }
+
+    .tab.active {
+      color: #18A0FB;
+      border-bottom-color: #18A0FB;
+    }
+
+    .content {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px;
+    }
+
+    .tab-panel {
+      display: none;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    .section {
+      margin-bottom: 24px;
+    }
+
+    .section-title {
+      font-size: 11px;
+      font-weight: 600;
+      color: #999999;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    button.primary {
+      background: #18A0FB;
+      color: white;
+    }
+
+    button.primary:hover {
+      background: #0D8CDB;
+    }
+
+    button.primary:disabled {
+      background: #CCCCCC;
+      cursor: not-allowed;
+    }
+
+    button.secondary {
+      background: #F0F0F0;
+      color: #333333;
+      margin-top: 8px;
+    }
+
+    button.secondary:hover {
+      background: #E0E0E0;
+    }
+
+    button.danger {
+      background: #F24822;
+      color: white;
+      margin-top: 8px;
+    }
+
+    button.danger:hover {
+      background: #D93E1B;
+    }
+
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #E5E5E5;
+      border-radius: 4px;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #E5E5E5;
+      border-radius: 4px;
+      font-size: 11px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      resize: vertical;
+      min-height: 60px;
+      margin-bottom: 8px;
+    }
+
+    .status {
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .status.info {
+      background: #E3F2FD;
+      color: #1565C0;
+    }
+
+    .status.success {
+      background: #E8F5E9;
+      color: #2E7D32;
+    }
+
+    .status.error {
+      background: #FFEBEE;
+      color: #C62828;
+    }
+
+    .status.hidden {
+      display: none;
+    }
+
+    .info-box {
+      background: #F8F9FA;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .info-box strong {
+      color: #333333;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      padding: 4px 0;
+      font-size: 11px;
+      color: #666666;
+    }
+
+    ul li:before {
+      content: "✓ ";
+      color: #18A0FB;
+      font-weight: bold;
+      margin-right: 6px;
+    }
+
+    .divider {
+      height: 1px;
+      background: #E5E5E5;
+      margin: 20px 0;
+    }
+
+    .footer {
+      padding: 12px 16px;
+      border-top: 1px solid #E5E5E5;
+      background: #F8F9FA;
+    }
+
+    .file-input-wrapper {
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    .file-input-wrapper input[type="file"] {
+      position: absolute;
+      left: -9999px;
+    }
+
+    .file-input-wrapper label {
+      display: block;
+      padding: 8px;
+      background: #F0F0F0;
+      border: 1px solid #E5E5E5;
+      border-radius: 4px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 12px;
+      color: #333333;
+    }
+
+    .file-input-wrapper label:hover {
+      background: #E0E0E0;
+    }
+
+    .file-name {
+      font-size: 11px;
+      color: #666666;
+      margin-top: 4px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>🎨 Finley AI Design System Manager</h1>
+      <div class="subtitle">Import tokens • Generate screens • Apply themes</div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <div class="tab active" data-tab="setup">Setup</div>
+      <div class="tab" data-tab="generate">Generate</div>
+      <div class="tab" data-tab="batch">Batch</div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div id="statusMessage" class="status hidden"></div>
+
+      <!-- Tab 1: Setup -->
+      <div class="tab-panel active" id="panel-setup">
+        <div class="section">
+          <div class="section-title">Import Design Tokens</div>
+          <button class="primary" id="importBtn">Import All Design Tokens</button>
+
+          <div class="info-box" style="margin-top: 12px;">
+            <strong>What will be imported:</strong>
+            <ul>
+              <li>10 color themes (20 with light/dark)</li>
+              <li>Typography styles (10 sizes)</li>
+              <li>Spacing variables (8 sizes)</li>
+              <li>Border radius (6 sizes)</li>
+              <li>Shadow effects (5 sizes)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section">
+          <div class="section-title">Available Themes</div>
+          <div class="info-box">
+            <strong>10 Color Themes × 2 Modes = 20 Variations:</strong>
+            <ul style="columns: 2; -webkit-columns: 2; -moz-columns: 2;">
+              <li>Classic Teal Lemon</li>
+              <li>Golden Hour</li>
+              <li>Ocean Breeze</li>
+              <li>Mint Fresh</li>
+              <li>Vibrant Energy</li>
+              <li>Soft Pastels</li>
+              <li>Deep Waters</li>
+              <li>Sunshine Bright</li>
+              <li>Balanced Harmony</li>
+              <li>Cool Professional</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Generate -->
+      <div class="tab-panel" id="panel-generate">
+        <div class="section">
+          <div class="section-title">1. Select Theme</div>
+          <select id="themeSelect">
+            <option value="">Choose a theme...</option>
+            <optgroup label="Classic Teal Lemon">
+              <option value="classic-teal-lemon-light">Classic Teal Lemon - Light</option>
+              <option value="classic-teal-lemon-dark">Classic Teal Lemon - Dark</option>
+            </optgroup>
+            <optgroup label="Golden Hour">
+              <option value="golden-hour-light">Golden Hour - Light</option>
+              <option value="golden-hour-dark">Golden Hour - Dark</option>
+            </optgroup>
+            <optgroup label="Ocean Breeze">
+              <option value="ocean-breeze-light">Ocean Breeze - Light</option>
+              <option value="ocean-breeze-dark">Ocean Breeze - Dark</option>
+            </optgroup>
+            <optgroup label="Mint Fresh">
+              <option value="mint-fresh-light">Mint Fresh - Light</option>
+              <option value="mint-fresh-dark">Mint Fresh - Dark</option>
+            </optgroup>
+            <optgroup label="Vibrant Energy">
+              <option value="vibrant-energy-light">Vibrant Energy - Light</option>
+              <option value="vibrant-energy-dark">Vibrant Energy - Dark</option>
+            </optgroup>
+            <optgroup label="Soft Pastels">
+              <option value="soft-pastels-light">Soft Pastels - Light</option>
+              <option value="soft-pastels-dark">Soft Pastels - Dark</option>
+            </optgroup>
+            <optgroup label="Deep Waters">
+              <option value="deep-waters-light">Deep Waters - Light</option>
+              <option value="deep-waters-dark">Deep Waters - Dark</option>
+            </optgroup>
+            <optgroup label="Sunshine Bright">
+              <option value="sunshine-bright-light">Sunshine Bright - Light</option>
+              <option value="sunshine-bright-dark">Sunshine Bright - Dark</option>
+            </optgroup>
+            <optgroup label="Balanced Harmony">
+              <option value="balanced-harmony-light">Balanced Harmony - Light</option>
+              <option value="balanced-harmony-dark">Balanced Harmony - Dark</option>
+            </optgroup>
+            <optgroup label="Cool Professional">
+              <option value="cool-professional-light">Cool Professional - Light</option>
+              <option value="cool-professional-dark">Cool Professional - Dark</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="section">
+          <div class="section-title">2. Choose Screen</div>
+          <select id="screenSelect">
+            <option value="">Choose a screen template...</option>
+            <optgroup label="Sample Screens">
+              <option value="hello-world-screen">Hello World</option>
+              <option value="login-screen">Login Screen</option>
+              <option value="onboarding-welcome">Onboarding Welcome</option>
+              <option value="profile-screen">Profile Screen</option>
+              <option value="dashboard-screen">Dashboard</option>
+            </optgroup>
+            <optgroup label="Wealth Navigator App">
+              <option value="01-welcome-screen">01 - Welcome Screen</option>
+              <option value="02-onboarding-age">02 - Onboarding Age</option>
+              <option value="03-onboarding-income">03 - Onboarding Income</option>
+              <option value="04-onboarding-assets">04 - Onboarding Assets</option>
+              <option value="05-onboarding-super">05 - Onboarding Super</option>
+              <option value="06-dashboard-wealth">06 - Dashboard Wealth</option>
+              <option value="18-progress-tracking">18 - Progress Tracking</option>
+              <option value="20-wealth-projection">20 - Wealth Projection</option>
+              <option value="22-social-comparison">22 - Social Comparison</option>
+              <option value="23-goal-setting">23 - Goal Setting</option>
+              <option value="financial-overview">Financial Overview</option>
+            </optgroup>
+          </select>
+
+          <div class="info-box">
+            Or paste custom screen JSON:
+          </div>
+          <textarea id="customScreenSpec" placeholder='{"name": "My Screen", "width": 390, "height": 844, "elements": [...]}'></textarea>
+        </div>
+
+        <div class="section">
+          <div class="section-title">3. Generate</div>
+          <button class="primary" id="generateBtn">Generate Screen</button>
+        </div>
+      </div>
+
+      <!-- Tab 3: Batch -->
+      <div class="tab-panel" id="panel-batch">
+        <div class="section">
+          <div class="section-title">Batch Generate Across All Themes</div>
+          <div class="info-box">
+            <strong>This will create:</strong>
+            <ul>
+              <li>20 screen variations (10 themes × 2 modes)</li>
+              <li>Positioned side-by-side for comparison</li>
+              <li>Same screen spec applied to all themes</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Choose Screen</div>
+          <select id="batchScreenSelect">
+            <option value="">Choose a screen template...</option>
+            <optgroup label="Sample Screens">
+              <option value="hello-world-screen">Hello World</option>
+              <option value="login-screen">Login Screen</option>
+              <option value="onboarding-welcome">Onboarding Welcome</option>
+              <option value="profile-screen">Profile Screen</option>
+              <option value="dashboard-screen">Dashboard</option>
+            </optgroup>
+            <optgroup label="Wealth Navigator App">
+              <option value="01-welcome-screen">01 - Welcome Screen</option>
+              <option value="02-onboarding-age">02 - Onboarding Age</option>
+              <option value="03-onboarding-income">03 - Onboarding Income</option>
+              <option value="04-onboarding-assets">04 - Onboarding Assets</option>
+              <option value="05-onboarding-super">05 - Onboarding Super</option>
+              <option value="06-dashboard-wealth">06 - Dashboard Wealth</option>
+              <option value="18-progress-tracking">18 - Progress Tracking</option>
+              <option value="20-wealth-projection">20 - Wealth Projection</option>
+              <option value="22-social-comparison">22 - Social Comparison</option>
+              <option value="23-goal-setting">23 - Goal Setting</option>
+              <option value="financial-overview">Financial Overview</option>
+            </optgroup>
+          </select>
+
+          <div class="info-box">
+            Or paste custom screen JSON:
+          </div>
+          <textarea id="batchCustomScreenSpec" placeholder='{"name": "My Screen", "width": 390, "height": 844, "elements": [...]}'></textarea>
+        </div>
+
+        <div class="section">
+          <button class="danger" id="generateAllBtn">Generate in All 20 Themes</button>
+          <div class="info-box" style="margin-top: 8px;">
+            ⚠️ This will create 20 frames. Make sure you have enough space in your Figma file.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <button class="secondary" id="closeBtn">Close Plugin</button>
+    </div>
+  </div>
+
+  <script>
+    // Tab switching
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const tabName = tab.getAttribute('data-tab');
+
+        // Update tab active state
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        // Update panel active state
+        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+        document.getElementById(`panel-${tabName}`).classList.add('active');
+      });
+    });
+
+    // Import tokens
+    document.getElementById('importBtn').addEventListener('click', () => {
+      showStatus('Importing design tokens...', 'info');
+      parent.postMessage({ pluginMessage: { type: 'import-tokens' } }, '*');
+    });
+
+    // Generate screen
+    document.getElementById('generateBtn').addEventListener('click', () => {
+      const themeValue = document.getElementById('themeSelect').value;
+      const screenTemplate = document.getElementById('screenSelect').value;
+      const customSpec = document.getElementById('customScreenSpec').value.trim();
+
+      if (!themeValue) {
+        showStatus('Please select a theme first', 'error');
+        return;
+      }
+
+      // Parse theme name and mode
+      const parts = themeValue.split('-');
+      const mode = parts.pop(); // 'light' or 'dark'
+      const themeName = parts.join('-'); // rest of the name
+
+      let screenSpec = null;
+
+      // Use custom spec if provided, otherwise use template
+      if (customSpec) {
+        try {
+          screenSpec = JSON.parse(customSpec);
+        } catch (e) {
+          showStatus('Invalid JSON in custom screen spec', 'error');
+          return;
+        }
+      } else if (screenTemplate) {
+        screenSpec = { template: screenTemplate };
+      } else {
+        showStatus('Please select a screen template or provide custom JSON', 'error');
+        return;
+      }
+
+      showStatus(`Generating screen with ${themeName} ${mode}...`, 'info');
+      parent.postMessage({
+        pluginMessage: {
+          type: 'generate-screen',
+          themeName,
+          mode,
+          screenSpec
+        }
+      }, '*');
+    });
+
+    // Generate all themes
+    document.getElementById('generateAllBtn').addEventListener('click', () => {
+      const screenTemplate = document.getElementById('batchScreenSelect').value;
+      const customSpec = document.getElementById('batchCustomScreenSpec').value.trim();
+
+      let screenSpec = null;
+
+      // Use custom spec if provided, otherwise use template
+      if (customSpec) {
+        try {
+          screenSpec = JSON.parse(customSpec);
+        } catch (e) {
+          showStatus('Invalid JSON in custom screen spec', 'error');
+          return;
+        }
+      } else if (screenTemplate) {
+        screenSpec = { template: screenTemplate };
+      } else {
+        showStatus('Please select a screen template or provide custom JSON', 'error');
+        return;
+      }
+
+      if (!confirm('This will create 20 frames (10 themes × 2 modes). Continue?')) {
+        return;
+      }
+
+      showStatus('Generating screens in all 20 themes...', 'info');
+      parent.postMessage({
+        pluginMessage: {
+          type: 'generate-all-themes',
+          screenSpec
+        }
+      }, '*');
+    });
+
+    // Close plugin
+    document.getElementById('closeBtn').addEventListener('click', () => {
+      parent.postMessage({ pluginMessage: { type: 'close' } }, '*');
+    });
+
+    // Handle messages from plugin code
+    onmessage = (event) => {
+      const msg = event.data.pluginMessage;
+
+      if (msg.type === 'import-complete') {
+        showStatus('✅ All design tokens imported successfully!', 'success');
+      }
+
+      if (msg.type === 'theme-set') {
+        showStatus(`✅ Theme set to ${msg.themeName} ${msg.mode}`, 'success');
+      }
+
+      if (msg.type === 'screen-generated') {
+        showStatus('✅ Screen generated successfully!', 'success');
+      }
+
+      if (msg.type === 'all-themes-generated') {
+        showStatus('✅ Generated screens in all 20 theme variations!', 'success');
+      }
+
+      if (msg.type === 'error') {
+        showStatus(`❌ Error: ${msg.message}`, 'error');
+      }
+    };
+
+    // Show status message
+    function showStatus(message, type) {
+      const statusEl = document.getElementById('statusMessage');
+      statusEl.textContent = message;
+      statusEl.className = `status ${type}`;
+      statusEl.classList.remove('hidden');
+
+      if (type === 'success') {
+        setTimeout(() => {
+          statusEl.classList.add('hidden');
+        }, 4000);
+      }
+    }
+  </script>
+</body>
+</html>

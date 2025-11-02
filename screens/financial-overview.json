@@ -1,0 +1,106 @@
+{
+  "name": "Financial Overview",
+  "width": 390,
+  "height": 844,
+  "elements": [
+    {
+      "type": "text",
+      "content": "income",
+      "x": 60,
+      "y": 100,
+      "fontSize": 24,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "expense",
+      "x": 250,
+      "y": 100,
+      "fontSize": 24,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "circle",
+      "x": 120,
+      "y": 180,
+      "width": 150,
+      "height": 150,
+      "colorToken": "color.accent.primary"
+    },
+    {
+      "type": "circle",
+      "x": 145,
+      "y": 205,
+      "width": 100,
+      "height": 100,
+      "colorToken": "color.background.primary"
+    },
+    {
+      "type": "circle",
+      "x": 120,
+      "y": 180,
+      "width": 150,
+      "height": 150,
+      "rotation": 0,
+      "arcLength": 252,
+      "colorToken": "color.accent.secondary"
+    },
+    {
+      "type": "text",
+      "content": "30%",
+      "x": 175,
+      "y": 240,
+      "fontSize": 24,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "disposable",
+      "x": 150,
+      "y": 360,
+      "fontSize": 16,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "rectangle",
+      "x": 50,
+      "y": 430,
+      "width": 290,
+      "height": 2,
+      "borderRadius": 1,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "text",
+      "content": "10/10",
+      "x": 165,
+      "y": 470,
+      "fontSize": 32,
+      "colorToken": "color.accent.primary"
+    },
+    {
+      "type": "text",
+      "content": "with 30% disposable",
+      "x": 115,
+      "y": 520,
+      "fontSize": 16,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "text",
+      "content": "you have the pathway",
+      "x": 95,
+      "y": 600,
+      "fontSize": 18,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "to build wealth",
+      "x": 125,
+      "y": 630,
+      "fontSize": 18,
+      "colorToken": "color.text.primary"
+    }
+  ]
+}

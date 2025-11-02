@@ -1,0 +1,139 @@
+{
+  "name": "Dashboard",
+  "width": 390,
+  "height": 844,
+  "elements": [
+    {
+      "type": "text",
+      "content": "Good Morning",
+      "x": 25,
+      "y": 80,
+      "fontSize": 16,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "text",
+      "content": "John",
+      "x": 25,
+      "y": 105,
+      "fontSize": 32,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "rectangle",
+      "x": 24,
+      "y": 180,
+      "width": 343,
+      "height": 160,
+      "borderRadius": 20,
+      "colorToken": "color.header.start"
+    },
+    {
+      "type": "text",
+      "content": "Total Balance",
+      "x": 49,
+      "y": 200,
+      "fontSize": 14,
+      "colorToken": "color.text.onColor"
+    },
+    {
+      "type": "text",
+      "content": "$12,345.67",
+      "x": 49,
+      "y": 230,
+      "fontSize": 42,
+      "colorToken": "color.text.onColor"
+    },
+    {
+      "type": "text",
+      "content": "+12.5% from last month",
+      "x": 49,
+      "y": 290,
+      "fontSize": 12,
+      "colorToken": "color.text.onColor"
+    },
+    {
+      "type": "text",
+      "content": "Quick Actions",
+      "x": 25,
+      "y": 370,
+      "fontSize": 20,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "rectangle",
+      "x": 25,
+      "y": 415,
+      "width": 165,
+      "height": 120,
+      "borderRadius": 16,
+      "colorToken": "color.card.start"
+    },
+    {
+      "type": "text",
+      "content": "Send",
+      "x": 45,
+      "y": 490,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "rectangle",
+      "x": 203,
+      "y": 415,
+      "width": 165,
+      "height": 120,
+      "borderRadius": 16,
+      "colorToken": "color.card.end"
+    },
+    {
+      "type": "text",
+      "content": "Receive",
+      "x": 223,
+      "y": 490,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "Recent Transactions",
+      "x": 25,
+      "y": 565,
+      "fontSize": 20,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "rectangle",
+      "x": 24,
+      "y": 615,
+      "width": 343,
+      "height": 70,
+      "borderRadius": 12,
+      "colorToken": "color.card.start"
+    },
+    {
+      "type": "text",
+      "content": "Coffee Shop",
+      "x": 85,
+      "y": 628,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "Today, 8:30 AM",
+      "x": 85,
+      "y": 652,
+      "fontSize": 12,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "text",
+      "content": "-$5.40",
+      "x": 305,
+      "y": 638,
+      "fontSize": 16,
+      "colorToken": "color.accent.secondary"
+    }
+  ]
+}

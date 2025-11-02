@@ -1,0 +1,158 @@
+{
+  "name": "23 - Goal Setting",
+  "width": 390,
+  "height": 844,
+  "elements": [
+    {
+      "type": "text",
+      "content": "Set Your Financial Goals",
+      "x": 70,
+      "y": 60,
+      "fontSize": 22,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "Short-term (1-2 years)",
+      "x": 50,
+      "y": 120,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "Emergency fund",
+      "x": 60,
+      "y": 155,
+      "fontSize": 14,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "$15k",
+      "x": 60,
+      "y": 175,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "60%",
+      "x": 310,
+      "y": 175,
+      "fontSize": 14,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "rectangle",
+      "x": 60,
+      "y": 200,
+      "width": 200,
+      "height": 8,
+      "borderRadius": 4,
+      "colorToken": "color.accent.primary",
+      "shadowToken": "shadow.button"
+    },
+    {
+      "type": "text",
+      "content": "Medium-term (3-7 years)",
+      "x": 50,
+      "y": 260,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "House deposit",
+      "x": 60,
+      "y": 295,
+      "fontSize": 14,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "$80k",
+      "x": 60,
+      "y": 315,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "25%",
+      "x": 310,
+      "y": 315,
+      "fontSize": 14,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "rectangle",
+      "x": 60,
+      "y": 340,
+      "width": 80,
+      "height": 8,
+      "borderRadius": 4,
+      "colorToken": "color.accent.secondary"
+    },
+    {
+      "type": "text",
+      "content": "Long-term (10+ years)",
+      "x": 50,
+      "y": 400,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "Retirement",
+      "x": 60,
+      "y": 435,
+      "fontSize": 14,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "$1.2M",
+      "x": 60,
+      "y": 455,
+      "fontSize": 16,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "8%",
+      "x": 310,
+      "y": 455,
+      "fontSize": 14,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "rectangle",
+      "x": 60,
+      "y": 480,
+      "width": 30,
+      "height": 8,
+      "borderRadius": 4,
+      "colorToken": "color.accent.primary",
+      "shadowToken": "shadow.button"
+    },
+    {
+      "type": "button",
+      "x": 50,
+      "y": 720,
+      "width": 290,
+      "height": 56,
+      "borderRadius": 12,
+      "colorToken": "color.accent.primary",
+      "shadowToken": "shadow.button"
+    },
+    {
+      "type": "text",
+      "content": "Add New Goal",
+      "x": 145,
+      "y": 738,
+      "fontSize": 18,
+      "colorToken": "color.text.button"
+    }
+  ]
+}

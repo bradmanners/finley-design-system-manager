@@ -1,0 +1,91 @@
+{
+  "name": "05 - Onboarding Super",
+  "width": 390,
+  "height": 844,
+  "elements": [
+    {
+      "type": "text",
+      "content": "4/5",
+      "x": 30,
+      "y": 60,
+      "fontSize": 14,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "text",
+      "content": "Superannuation",
+      "x": 105,
+      "y": 220,
+      "fontSize": 24,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "balance?",
+      "x": 140,
+      "y": 255,
+      "fontSize": 24,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "rectangle",
+      "x": 60,
+      "y": 305,
+      "width": 270,
+      "height": 70,
+      "borderRadius": 12,
+      "colorToken": "color.card.start"
+    },
+    {
+      "type": "text",
+      "content": "$25,000",
+      "x": 130,
+      "y": 328,
+      "fontSize": 28,
+      "colorToken": "color.text.primary"
+    },
+    {
+      "type": "text",
+      "content": "Australian average for 28yr old: $23,000",
+      "x": 70,
+      "y": 400,
+      "fontSize": 12,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "text",
+      "content": "You're ahead by $2,000!",
+      "x": 115,
+      "y": 430,
+      "fontSize": 14,
+      "colorToken": "color.accent.primary",
+      "shadowToken": "shadow.button"
+    },
+    {
+      "type": "text",
+      "content": "Super is 40% of retirement wealth",
+      "x": 85,
+      "y": 460,
+      "fontSize": 12,
+      "colorToken": "color.text.secondary"
+    },
+    {
+      "type": "button",
+      "x": 60,
+      "y": 720,
+      "width": 270,
+      "height": 56,
+      "borderRadius": 28,
+      "colorToken": "color.accent.primary",
+      "shadowToken": "shadow.button"
+    },
+    {
+      "type": "text",
+      "content": "Next",
+      "x": 175,
+      "y": 738,
+      "fontSize": 18,
+      "colorToken": "color.text.button"
+    }
+  ]
+}

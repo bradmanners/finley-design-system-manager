@@ -1,16 +1,19 @@
 # Finley AI Design System Manager
 
-A comprehensive Figma plugin that combines design token management with intelligent screen generation across 10 unique themes.
+A comprehensive Figma plugin that combines design token management with intelligent screen generation across 4 carefully curated themes.
 
 ## Features
 
 ### Token Management
 - One-click import of all design tokens
-- 10 color themes × 2 modes (light/dark) = 8 variations
+- 4 color themes × 2 modes (light/dark) = 8 variations
 - Typography styles (10 sizes)
-- Spacing variables (8 sizes)
+- Spacing variables (9 sizes)
 - Border radius variables (6 sizes)
-- Shadow effect styles (5 sizes)
+- Shadow effect styles (9 sizes)
+- Text shadow styles (3 sizes)
+- Opacity variables (7 levels)
+- Transition timing (3 speeds)
 
 ### Screen Generation
 - Generate screens from JSON specifications
@@ -98,8 +101,8 @@ A comprehensive Figma plugin that combines design token management with intellig
 ### Batch Tab - Generate All Variations
 
 1. **Choose a Screen** (template or custom JSON)
-2. **Click "Generate in All 20 Themes"**
-3. Confirm the action (creates 20 frames)
+2. **Click "Generate in All 8 Variations"**
+3. Confirm the action (creates 8 frames)
 4. All 8 theme variations will be generated side-by-side
 
 **Use Cases:**
@@ -108,20 +111,31 @@ A comprehensive Figma plugin that combines design token management with intellig
 - Present multiple theme options to stakeholders
 - Quickly iterate on screen designs
 
-## Available Themes
+## Available Themes (Version 17)
 
 Each theme has both Light and Dark modes:
 
-1. **Classic Teal Lemon** - Refreshing teal and lemon combination
-2. **Golden Hour** - Warm sunset-inspired palette
-3. **Ocean Breeze** - Cool oceanic blues
-4. **Mint Fresh** - Clean mint and aqua tones
-5. **Vibrant Energy** - Bold and energetic colors
-6. **Soft Pastels** - Gentle pastel palette
-7. **Deep Waters** - Rich deep blues and purples
-8. **Sunshine Bright** - Cheerful yellows and oranges
-9. **Balanced Harmony** - Balanced neutral tones
-10. **Cool Professional** - Professional slate and blue
+1. **🎨 Classic Teal & Lemon** - Refreshing teal cards with vibrant yellow accents
+   - Light: White background, teal gradients (#3EB8AF → #2CA89F), yellow buttons
+   - Dark: Dark gray background, maintains yellow accent consistency
+
+2. **🌊 Ocean Breeze** - Teal-green ocean-inspired palette
+   - Light: White background, teal-green cards (#198C8C → #167878), yellow accents
+   - Dark: Deep teal background (#1A3838), atmospheric and calming
+
+3. **🌸 Soft Pastels** - Gentle mint-green pastel tones
+   - Light: White background, soft mint cards (#C7E1D8 → #B5D3C9), yellow accents
+   - Dark: Dark sage green background (#2A3530), sophisticated and muted
+
+4. **💼 Cool Professional** - Professional emerald green
+   - Light: White background, emerald green cards (#18BC8C → #14A87C), yellow accents
+   - Dark: Dark teal background (#1A2E2A), corporate and refined
+
+**Design Philosophy:**
+- All themes share the same yellow accent (#FFF348) for brand consistency
+- Each theme offers distinct card/header colors for variety
+- Light modes are clean and approachable
+- Dark modes are sophisticated and atmospheric
 
 ## Custom Screen Specifications
 
@@ -258,8 +272,8 @@ finley-design-system-manager/
 - Test designs across multiple themes early
 
 **Performance:**
-- Batch generation creates 20 frames - ensure you have space
-- Consider generating fewer themes initially for testing
+- Batch generation creates 8 frames - ensure you have space
+- All themes optimized for quick generation
 - Use viewport zoom to see all generated frames
 
 **Iteration:**
@@ -309,7 +323,7 @@ The same tokens can be exported for:
 
 ## Next Steps
 
-1. **Import tokens** - Get all 20 themes into Figma
+1. **Import tokens** - Get all 4 themes (8 variations) into Figma
 2. **Explore themes** - Try generating screens in different themes
 3. **Build components** - Create a component library using the tokens
 4. **Design screens** - Create your app screens with consistent tokens
@@ -323,10 +337,11 @@ Built with:
 - TypeScript
 - esbuild
 - Figma Plugin API
-- 10 beautiful color themes
+- 4 beautiful, curated color themes (Version 17)
 
 ---
 
-**Version:** 1.0.0
+**Version:** 2.0.0 (November 3, 2025)
+**Status:** 4 themes finalized, Version 17 colors integrated
 **License:** MIT
 **Author:** Finley AI Team

@@ -4,16 +4,19 @@
   var design_tokens_default = {
     $schema: "https://design-tokens.github.io/community-group/format",
     meta: {
-      name: "Finley AI Design System - Complete",
+      name: "Finley AI Design System",
       version: "2.0.0",
-      description: "Comprehensive design tokens for Finley AI including gradients, shadows, animations, and all visual details"
+      description: "Complete design tokens for Finley AI - 4 themes with light and dark modes",
+      author: "Finley AI Design Team",
+      lastUpdated: "2025-11-03"
     },
     global: {
       typography: {
         fontFamily: {
           primary: {
             value: "Comfortaa, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif",
-            type: "fontFamily"
+            type: "fontFamily",
+            description: "Primary font family for all text"
           }
         },
         fontWeight: {
@@ -87,15 +90,18 @@
         lineHeight: {
           tight: {
             value: 1.2,
-            type: "lineHeight"
+            type: "lineHeight",
+            description: "For headings"
           },
           normal: {
             value: 1.5,
-            type: "lineHeight"
+            type: "lineHeight",
+            description: "For body text"
           },
           relaxed: {
             value: 1.6,
-            type: "lineHeight"
+            type: "lineHeight",
+            description: "For paragraphs"
           }
         }
       },
@@ -160,7 +166,8 @@
         },
         full: {
           value: "50px",
-          type: "borderRadius"
+          type: "borderRadius",
+          description: "For pill-shaped buttons"
         }
       },
       borderWidth: {
@@ -184,45 +191,55 @@
       shadow: {
         sm: {
           value: "0 4px 20px rgba(0, 0, 0, 0.08)",
-          type: "boxShadow"
+          type: "boxShadow",
+          description: "For headers and subtle elevation"
         },
         md: {
           value: "0 10px 30px rgba(0, 0, 0, 0.15)",
-          type: "boxShadow"
+          type: "boxShadow",
+          description: "For cards and controls"
         },
         lg: {
           value: "0 10px 40px rgba(0, 0, 0, 0.15)",
-          type: "boxShadow"
+          type: "boxShadow",
+          description: "For feature cards"
         },
         xl: {
           value: "0 20px 60px rgba(0, 0, 0, 0.12)",
-          type: "boxShadow"
+          type: "boxShadow",
+          description: "For hero cards"
         },
         "2xl": {
           value: "0 25px 70px rgba(0, 0, 0, 0.18)",
-          type: "boxShadow"
+          type: "boxShadow",
+          description: "For hover states on hero cards"
         },
         icon: {
           value: "0 8px 20px rgba(0, 0, 0, 0.15)",
-          type: "boxShadow"
+          type: "boxShadow",
+          description: "For icon containers"
         },
         button: {
           value: "0 10px 30px rgba(0, 0, 0, 0.15)",
-          type: "boxShadow"
+          type: "boxShadow",
+          description: "Default button shadow"
         },
         buttonHover: {
           value: "0 15px 40px rgba(0, 0, 0, 0.25)",
-          type: "boxShadow"
+          type: "boxShadow",
+          description: "Button hover state"
         },
         cardHover: {
           value: "0 20px 50px rgba(0, 0, 0, 0.15)",
-          type: "boxShadow"
+          type: "boxShadow",
+          description: "Feature card hover state"
         }
       },
       textShadow: {
         sm: {
           value: "0 2px 8px rgba(0, 0, 0, 0.2)",
-          type: "textShadow"
+          type: "textShadow",
+          description: "For logo text"
         },
         md: {
           value: "0 4px 15px rgba(0, 0, 0, 0.15)",
@@ -252,7 +269,8 @@
         },
         subtle: {
           value: 0.9,
-          type: "opacity"
+          type: "opacity",
+          description: "For secondary text on colored backgrounds"
         },
         almostFull: {
           value: 0.95,
@@ -266,38 +284,45 @@
       transition: {
         fast: {
           value: "0.15s ease",
-          type: "transition"
+          type: "transition",
+          description: "For micro-interactions"
         },
         medium: {
           value: "0.3s ease",
-          type: "transition"
+          type: "transition",
+          description: "For most hover states and animations"
         },
         slow: {
           value: "0.5s ease",
-          type: "transition"
+          type: "transition",
+          description: "For theme transitions"
         }
       },
       animation: {
         hover: {
           translateY: {
             value: "-2px",
-            type: "dimension"
+            type: "dimension",
+            description: "Button hover lift"
           },
           scale: {
             value: 1.05,
-            type: "number"
+            type: "number",
+            description: "Scale on hover"
           }
         },
         cardHover: {
           translateY: {
             value: "-5px",
-            type: "dimension"
+            type: "dimension",
+            description: "Hero card hover lift"
           }
         },
         featureCardHover: {
           translateY: {
             value: "-8px",
-            type: "dimension"
+            type: "dimension",
+            description: "Feature card hover lift"
           }
         }
       }
@@ -310,33 +335,38 @@
             type: "spacing"
           },
           fontSize: {
-            value: "{global.typography.fontSize.lg}",
+            value: "18px",
             type: "fontSize"
           },
           fontWeight: {
-            value: "{global.typography.fontWeight.bold}",
+            value: 700,
             type: "fontWeight"
           },
           borderRadius: {
-            value: "{global.borderRadius.full}",
+            value: "50px",
             type: "borderRadius"
           },
           borderWidth: {
-            value: "{global.borderWidth.none}",
+            value: "0px",
             type: "borderWidth"
           },
           transition: {
-            value: "{global.transition.medium}",
+            value: "0.3s ease",
             type: "transition"
           },
           shadow: {
             default: {
-              value: "{global.shadow.button}",
+              value: "0 10px 30px rgba(0, 0, 0, 0.15)",
               type: "boxShadow"
             },
             hover: {
-              value: "{global.shadow.buttonHover}",
+              value: "0 15px 40px rgba(0, 0, 0, 0.25)",
               type: "boxShadow"
+            }
+          },
+          animation: {
+            hover: {
+              translateY: "-2px"
             }
           }
         }
@@ -344,31 +374,36 @@
       card: {
         hero: {
           borderRadius: {
-            value: "{global.borderRadius.2xl}",
+            value: "24px",
             type: "borderRadius"
           },
           padding: {
-            value: "{global.spacing.2xl}",
+            value: "40px",
             type: "spacing"
           },
           shadow: {
             default: {
-              value: "{global.shadow.xl}",
+              value: "0 20px 60px rgba(0, 0, 0, 0.12)",
               type: "boxShadow"
             },
             hover: {
-              value: "{global.shadow.2xl}",
+              value: "0 25px 70px rgba(0, 0, 0, 0.18)",
               type: "boxShadow"
             }
           },
           transition: {
-            value: "{global.transition.medium}",
+            value: "0.3s ease",
             type: "transition"
+          },
+          animation: {
+            hover: {
+              translateY: "-5px"
+            }
           }
         },
         feature: {
           borderRadius: {
-            value: "{global.borderRadius.xl}",
+            value: "20px",
             type: "borderRadius"
           },
           padding: {
@@ -377,17 +412,22 @@
           },
           shadow: {
             default: {
-              value: "{global.shadow.lg}",
+              value: "0 10px 40px rgba(0, 0, 0, 0.1)",
               type: "boxShadow"
             },
             hover: {
-              value: "{global.shadow.cardHover}",
+              value: "0 20px 50px rgba(0, 0, 0, 0.15)",
               type: "boxShadow"
             }
           },
           transition: {
-            value: "{global.transition.medium}",
+            value: "0.3s ease",
             type: "transition"
+          },
+          animation: {
+            hover: {
+              translateY: "-8px"
+            }
           }
         }
       },
@@ -397,8 +437,18 @@
           type: "spacing"
         },
         shadow: {
-          value: "{global.shadow.sm}",
+          value: "0 4px 20px rgba(0, 0, 0, 0.08)",
           type: "boxShadow"
+        }
+      },
+      footer: {
+        padding: {
+          value: "40px",
+          type: "spacing"
+        },
+        marginTop: {
+          value: "100px",
+          type: "spacing"
         }
       },
       nav: {
@@ -408,21 +458,25 @@
             type: "spacing"
           },
           borderRadius: {
-            value: "{global.borderRadius.sm}",
+            value: "8px",
             type: "borderRadius"
           },
           fontWeight: {
-            value: "{global.typography.fontWeight.medium}",
+            value: 500,
             type: "fontWeight"
           },
           transition: {
-            value: "{global.transition.medium}",
+            value: "0.3s ease",
             type: "transition"
           },
           hoverBackground: {
             value: "rgba(255, 255, 255, 0.2)",
             type: "color"
           }
+        },
+        gap: {
+          value: "30px",
+          type: "spacing"
         }
       },
       icon: {
@@ -431,32 +485,36 @@
           type: "dimension"
         },
         borderRadius: {
-          value: "{global.borderRadius.lg}",
+          value: "16px",
           type: "borderRadius"
         },
         shadow: {
-          value: "{global.shadow.icon}",
+          value: "0 8px 20px rgba(0, 0, 0, 0.15)",
           type: "boxShadow"
+        },
+        marginBottom: {
+          value: "20px",
+          type: "spacing"
         }
       },
       stat: {
         number: {
           fontSize: {
-            value: "{global.typography.fontSize.5xl}",
+            value: "48px",
             type: "fontSize"
           },
           fontWeight: {
-            value: "{global.typography.fontWeight.bold}",
+            value: 700,
             type: "fontWeight"
           }
         },
         label: {
           fontSize: {
-            value: "{global.typography.fontSize.base}",
+            value: "16px",
             type: "fontSize"
           },
           fontWeight: {
-            value: "{global.typography.fontWeight.medium}",
+            value: 500,
             type: "fontWeight"
           },
           marginTop: {
@@ -464,7 +522,7 @@
             type: "spacing"
           },
           opacity: {
-            value: "{global.opacity.subtle}",
+            value: 0.9,
             type: "opacity"
           }
         },
@@ -475,48 +533,48 @@
       },
       logo: {
         fontSize: {
-          value: "{global.typography.fontSize.3xl}",
+          value: "28px",
           type: "fontSize"
         },
         fontWeight: {
-          value: "{global.typography.fontWeight.bold}",
+          value: 700,
           type: "fontWeight"
         },
         textShadow: {
-          value: "{global.textShadow.sm}",
+          value: "0 2px 8px rgba(0, 0, 0, 0.2)",
           type: "textShadow"
         }
       },
       hero: {
         title: {
           fontSize: {
-            value: "{global.typography.fontSize.6xl}",
+            value: "58px",
             type: "fontSize"
           },
           fontWeight: {
-            value: "{global.typography.fontWeight.extrabold}",
+            value: 800,
             type: "fontWeight"
           },
           lineHeight: {
-            value: "{global.typography.lineHeight.tight}",
+            value: 1.2,
             type: "lineHeight"
           },
           marginBottom: {
-            value: "{global.spacing.lg}",
+            value: "24px",
             type: "spacing"
           }
         },
         description: {
           fontSize: {
-            value: "{global.typography.fontSize.xl}",
+            value: "20px",
             type: "fontSize"
           },
           lineHeight: {
-            value: "{global.typography.lineHeight.relaxed}",
+            value: 1.6,
             type: "lineHeight"
           },
           marginBottom: {
-            value: "{global.spacing.xl}",
+            value: "32px",
             type: "spacing"
           }
         },
@@ -525,38 +583,57 @@
           type: "dimension"
         },
         marginTop: {
-          value: "{global.spacing.4xl}",
+          value: "80px",
           type: "spacing"
         },
         gap: {
-          value: "{global.spacing.3xl}",
+          value: "60px",
+          type: "spacing"
+        },
+        padding: {
+          value: "0 40px",
           type: "spacing"
         }
       },
       section: {
         title: {
           fontSize: {
-            value: "{global.typography.fontSize.4xl}",
+            value: "42px",
             type: "fontSize"
           },
           fontWeight: {
-            value: "{global.typography.fontWeight.extrabold}",
+            value: 800,
             type: "fontWeight"
           },
           marginBottom: {
-            value: "{global.spacing.3xl}",
+            value: "60px",
             type: "spacing"
+          },
+          textAlign: {
+            value: "center"
           }
+        },
+        maxWidth: {
+          value: "1200px",
+          type: "dimension"
+        },
+        marginTop: {
+          value: "100px",
+          type: "spacing"
+        },
+        padding: {
+          value: "0 40px",
+          type: "spacing"
         }
       },
       featureCard: {
         title: {
           fontSize: {
-            value: "{global.typography.fontSize.2xl}",
+            value: "22px",
             type: "fontSize"
           },
           fontWeight: {
-            value: "{global.typography.fontWeight.bold}",
+            value: 700,
             type: "fontWeight"
           },
           marginBottom: {
@@ -566,23 +643,48 @@
         },
         description: {
           lineHeight: {
-            value: "{global.typography.lineHeight.relaxed}",
+            value: 1.6,
             type: "lineHeight"
           }
         }
       },
+      featuresGrid: {
+        columns: {
+          value: 3,
+          type: "number",
+          description: "Number of columns in features grid"
+        },
+        gap: {
+          value: "30px",
+          type: "spacing"
+        }
+      },
       themeControls: {
+        position: {
+          top: {
+            value: "20px",
+            type: "spacing"
+          },
+          right: {
+            value: "20px",
+            type: "spacing"
+          }
+        },
+        gap: {
+          value: "10px",
+          type: "spacing"
+        },
         selector: {
           padding: {
             value: "15px",
             type: "spacing"
           },
           borderRadius: {
-            value: "{global.borderRadius.md}",
+            value: "12px",
             type: "borderRadius"
           },
           borderWidth: {
-            value: "{global.borderWidth.medium}",
+            value: "2px",
             type: "borderWidth"
           },
           borderColor: {
@@ -590,7 +692,7 @@
             type: "color"
           },
           shadow: {
-            value: "{global.shadow.md}",
+            value: "0 10px 30px rgba(0, 0, 0, 0.15)",
             type: "boxShadow"
           }
         },
@@ -600,24 +702,32 @@
             type: "spacing"
           },
           borderRadius: {
-            value: "{global.borderRadius.sm}",
+            value: "8px",
             type: "borderRadius"
           },
           borderWidth: {
-            value: "{global.borderWidth.medium}",
+            value: "2px",
             type: "borderWidth"
           },
+          borderColor: {
+            value: "rgba(255, 255, 255, 0.5)",
+            type: "color"
+          },
           fontSize: {
-            value: "{global.typography.fontSize.sm}",
+            value: "14px",
             type: "fontSize"
           },
           fontWeight: {
-            value: "{global.typography.fontWeight.semibold}",
+            value: 600,
             type: "fontWeight"
           },
           minWidth: {
             value: "200px",
             type: "dimension"
+          },
+          background: {
+            value: "rgba(255, 255, 255, 0.95)",
+            type: "color"
           }
         },
         toggle: {
@@ -626,19 +736,27 @@
             type: "dimension"
           },
           borderRadius: {
-            value: "{global.borderRadius.md}",
+            value: "12px",
             type: "borderRadius"
+          },
+          borderWidth: {
+            value: "2px",
+            type: "borderWidth"
+          },
+          borderColor: {
+            value: "rgba(255, 255, 255, 0.3)",
+            type: "color"
           },
           fontSize: {
             value: "24px",
             type: "fontSize"
           },
           shadow: {
-            value: "{global.shadow.md}",
+            value: "0 10px 30px rgba(0, 0, 0, 0.15)",
             type: "boxShadow"
           },
           transition: {
-            value: "{global.transition.medium}",
+            value: "0.3s ease",
             type: "transition"
           }
         }
@@ -671,15 +789,18 @@
             gradient: {
               accent: {
                 value: "linear-gradient(135deg, #FFF348 0%, #FFE082 100%)",
-                type: "gradient"
+                type: "gradient",
+                description: "Button gradient"
               },
               card: {
                 value: "linear-gradient(135deg, #3EB8AF 0%, #2CA89F 100%)",
-                type: "gradient"
+                type: "gradient",
+                description: "Card and feature card gradient"
               },
               header: {
                 value: "linear-gradient(135deg, #3EB8AF 0%, #2CA89F 100%)",
-                type: "gradient"
+                type: "gradient",
+                description: "Header and footer gradient"
               }
             },
             card: {
@@ -705,19 +826,23 @@
             text: {
               primary: {
                 value: "#2a2a2a",
-                type: "color"
+                type: "color",
+                description: "Main body text"
               },
               secondary: {
                 value: "#666666",
-                type: "color"
+                type: "color",
+                description: "Secondary text"
               },
               onColor: {
                 value: "#FFFFFF",
-                type: "color"
+                type: "color",
+                description: "Text on colored backgrounds"
               },
               button: {
                 value: "#2a2a2a",
-                type: "color"
+                type: "color",
+                description: "Button text color"
               }
             }
           }
@@ -808,61 +933,61 @@
                 type: "color"
               },
               secondary: {
-                value: "#F0F8FF",
+                value: "#F8FFFE",
                 type: "color"
               }
             },
             accent: {
               primary: {
-                value: "#4FC3F7",
+                value: "#FFF348",
                 type: "color"
               },
               secondary: {
-                value: "#29B6F6",
+                value: "#FFE082",
                 type: "color"
               }
             },
             gradient: {
               accent: {
-                value: "linear-gradient(135deg, #4FC3F7 0%, #29B6F6 100%)",
+                value: "linear-gradient(135deg, #FFF348 0%, #FFE082 100%)",
                 type: "gradient"
               },
               card: {
-                value: "linear-gradient(135deg, #0288D1 0%, #0277BD 100%)",
+                value: "linear-gradient(135deg, #198C8C 0%, #167878 100%)",
                 type: "gradient"
               },
               header: {
-                value: "linear-gradient(135deg, #0288D1 0%, #0277BD 100%)",
+                value: "linear-gradient(135deg, #198C8C 0%, #167878 100%)",
                 type: "gradient"
               }
             },
             card: {
               start: {
-                value: "#0288D1",
+                value: "#198C8C",
                 type: "color"
               },
               end: {
-                value: "#0277BD",
+                value: "#167878",
                 type: "color"
               }
             },
             header: {
               start: {
-                value: "#0288D1",
+                value: "#198C8C",
                 type: "color"
               },
               end: {
-                value: "#0277BD",
+                value: "#167878",
                 type: "color"
               }
             },
             text: {
               primary: {
-                value: "#1A237E",
+                value: "#1A5F5A",
                 type: "color"
               },
               secondary: {
-                value: "#5C6BC0",
+                value: "#2A5F5A",
                 type: "color"
               },
               onColor: {
@@ -870,7 +995,7 @@
                 type: "color"
               },
               button: {
-                value: "#1A237E",
+                value: "#2a2a2a",
                 type: "color"
               }
             }
@@ -880,73 +1005,73 @@
           color: {
             background: {
               primary: {
-                value: "#0D1B2A",
+                value: "#1A3838",
                 type: "color"
               },
               secondary: {
-                value: "#1B263B",
+                value: "#2A4848",
                 type: "color"
               }
             },
             accent: {
               primary: {
-                value: "#4FC3F7",
+                value: "#FFF348",
                 type: "color"
               },
               secondary: {
-                value: "#29B6F6",
+                value: "#FFE082",
                 type: "color"
               }
             },
             gradient: {
               accent: {
-                value: "linear-gradient(135deg, #4FC3F7 0%, #29B6F6 100%)",
+                value: "linear-gradient(135deg, #FFF348 0%, #FFE082 100%)",
                 type: "gradient"
               },
               card: {
-                value: "linear-gradient(135deg, #1E3A5F 0%, #1A2F4A 100%)",
+                value: "linear-gradient(135deg, #2A3F3F 0%, #1F3333 100%)",
                 type: "gradient"
               },
               header: {
-                value: "linear-gradient(135deg, #0D1B2A 0%, #0A1628 100%)",
+                value: "linear-gradient(135deg, #0D2C2C 0%, #0A2222 100%)",
                 type: "gradient"
               }
             },
             card: {
               start: {
-                value: "#1E3A5F",
+                value: "#2A3F3F",
                 type: "color"
               },
               end: {
-                value: "#1A2F4A",
+                value: "#1F3333",
                 type: "color"
               }
             },
             header: {
               start: {
-                value: "#0D1B2A",
+                value: "#0D2C2C",
                 type: "color"
               },
               end: {
-                value: "#0A1628",
+                value: "#0A2222",
                 type: "color"
               }
             },
             text: {
               primary: {
-                value: "#E3F2FD",
+                value: "#E5F5F5",
                 type: "color"
               },
               secondary: {
-                value: "#90CAF9",
+                value: "#A0C0C0",
                 type: "color"
               },
               onColor: {
-                value: "#FFFFFF",
+                value: "#E5F5F5",
                 type: "color"
               },
               button: {
-                value: "#1A237E",
+                value: "#2a2a2a",
                 type: "color"
               }
             }
@@ -962,69 +1087,69 @@
                 type: "color"
               },
               secondary: {
-                value: "#FFF9F5",
+                value: "#F8F9FA",
                 type: "color"
               }
             },
             accent: {
               primary: {
-                value: "#FFB3BA",
+                value: "#FFF348",
                 type: "color"
               },
               secondary: {
-                value: "#FFDFBA",
+                value: "#FFE082",
                 type: "color"
               }
             },
             gradient: {
               accent: {
-                value: "linear-gradient(135deg, #FFB3BA 0%, #FFDFBA 100%)",
+                value: "linear-gradient(135deg, #FFF348 0%, #FFE082 100%)",
                 type: "gradient"
               },
               card: {
-                value: "linear-gradient(135deg, #BFBFE6 0%, #D4BFE8 100%)",
+                value: "linear-gradient(135deg, #C7E1D8 0%, #B5D3C9 100%)",
                 type: "gradient"
               },
               header: {
-                value: "linear-gradient(135deg, #BFBFE6 0%, #D4BFE8 100%)",
+                value: "linear-gradient(135deg, #C7E1D8 0%, #B5D3C9 100%)",
                 type: "gradient"
               }
             },
             card: {
               start: {
-                value: "#BFBFE6",
+                value: "#C7E1D8",
                 type: "color"
               },
               end: {
-                value: "#D4BFE8",
+                value: "#B5D3C9",
                 type: "color"
               }
             },
             header: {
               start: {
-                value: "#BFBFE6",
+                value: "#C7E1D8",
                 type: "color"
               },
               end: {
-                value: "#D4BFE8",
+                value: "#B5D3C9",
                 type: "color"
               }
             },
             text: {
               primary: {
-                value: "#4A4063",
+                value: "#2a2a2a",
                 type: "color"
               },
               secondary: {
-                value: "#8B7BA8",
+                value: "#4A4A4A",
                 type: "color"
               },
               onColor: {
-                value: "#FFFFFF",
+                value: "#2a2a2a",
                 type: "color"
               },
               button: {
-                value: "#4A4063",
+                value: "#2a2a2a",
                 type: "color"
               }
             }
@@ -1034,73 +1159,73 @@
           color: {
             background: {
               primary: {
-                value: "#2D2438",
+                value: "#2A3530",
                 type: "color"
               },
               secondary: {
-                value: "#3D3148",
+                value: "#354540",
                 type: "color"
               }
             },
             accent: {
               primary: {
-                value: "#FFB3BA",
+                value: "#FFF348",
                 type: "color"
               },
               secondary: {
-                value: "#FFDFBA",
+                value: "#FFE082",
                 type: "color"
               }
             },
             gradient: {
               accent: {
-                value: "linear-gradient(135deg, #FFB3BA 0%, #FFDFBA 100%)",
+                value: "linear-gradient(135deg, #FFF348 0%, #FFE082 100%)",
                 type: "gradient"
               },
               card: {
-                value: "linear-gradient(135deg, #4A3F5C 0%, #514561 100%)",
+                value: "linear-gradient(135deg, #35403B 0%, #2A342F 100%)",
                 type: "gradient"
               },
               header: {
-                value: "linear-gradient(135deg, #2D2438 0%, #261F34 100%)",
+                value: "linear-gradient(135deg, #1F2A26 0%, #18221E 100%)",
                 type: "gradient"
               }
             },
             card: {
               start: {
-                value: "#4A3F5C",
+                value: "#35403B",
                 type: "color"
               },
               end: {
-                value: "#514561",
+                value: "#2A342F",
                 type: "color"
               }
             },
             header: {
               start: {
-                value: "#2D2438",
+                value: "#1F2A26",
                 type: "color"
               },
               end: {
-                value: "#261F34",
+                value: "#18221E",
                 type: "color"
               }
             },
             text: {
               primary: {
-                value: "#F5E6FF",
+                value: "#E5E5E5",
                 type: "color"
               },
               secondary: {
-                value: "#D4BFE8",
+                value: "#B0B0B0",
                 type: "color"
               },
               onColor: {
-                value: "#FFFFFF",
+                value: "#E5E5E5",
                 type: "color"
               },
               button: {
-                value: "#4A4063",
+                value: "#2a2a2a",
                 type: "color"
               }
             }
@@ -1116,61 +1241,61 @@
                 type: "color"
               },
               secondary: {
-                value: "#F5F7FA",
+                value: "#F8FFFE",
                 type: "color"
               }
             },
             accent: {
               primary: {
-                value: "#00BCD4",
+                value: "#FFF348",
                 type: "color"
               },
               secondary: {
-                value: "#00ACC1",
+                value: "#FFE082",
                 type: "color"
               }
             },
             gradient: {
               accent: {
-                value: "linear-gradient(135deg, #00BCD4 0%, #00ACC1 100%)",
+                value: "linear-gradient(135deg, #FFF348 0%, #FFE082 100%)",
                 type: "gradient"
               },
               card: {
-                value: "linear-gradient(135deg, #37474F 0%, #263238 100%)",
+                value: "linear-gradient(135deg, #18BC8C 0%, #14A87C 100%)",
                 type: "gradient"
               },
               header: {
-                value: "linear-gradient(135deg, #37474F 0%, #263238 100%)",
+                value: "linear-gradient(135deg, #18BC8C 0%, #14A87C 100%)",
                 type: "gradient"
               }
             },
             card: {
               start: {
-                value: "#37474F",
+                value: "#18BC8C",
                 type: "color"
               },
               end: {
-                value: "#263238",
+                value: "#14A87C",
                 type: "color"
               }
             },
             header: {
               start: {
-                value: "#37474F",
+                value: "#18BC8C",
                 type: "color"
               },
               end: {
-                value: "#263238",
+                value: "#14A87C",
                 type: "color"
               }
             },
             text: {
               primary: {
-                value: "#263238",
+                value: "#1A5F5A",
                 type: "color"
               },
               secondary: {
-                value: "#607D8B",
+                value: "#2A5F5A",
                 type: "color"
               },
               onColor: {
@@ -1178,7 +1303,7 @@
                 type: "color"
               },
               button: {
-                value: "#263238",
+                value: "#2a2a2a",
                 type: "color"
               }
             }
@@ -1188,73 +1313,73 @@
           color: {
             background: {
               primary: {
-                value: "#121212",
+                value: "#1A2E2A",
                 type: "color"
               },
               secondary: {
-                value: "#1E1E1E",
+                value: "#2A3F3B",
                 type: "color"
               }
             },
             accent: {
               primary: {
-                value: "#00BCD4",
+                value: "#FFF348",
                 type: "color"
               },
               secondary: {
-                value: "#00ACC1",
+                value: "#FFE082",
                 type: "color"
               }
             },
             gradient: {
               accent: {
-                value: "linear-gradient(135deg, #00BCD4 0%, #00ACC1 100%)",
+                value: "linear-gradient(135deg, #FFF348 0%, #FFE082 100%)",
                 type: "gradient"
               },
               card: {
-                value: "linear-gradient(135deg, #2C2C2C 0%, #232323 100%)",
+                value: "linear-gradient(135deg, #2A3F3F 0%, #1F3333 100%)",
                 type: "gradient"
               },
               header: {
-                value: "linear-gradient(135deg, #1A1A1A 0%, #0F0F0F 100%)",
+                value: "linear-gradient(135deg, #0F1F1C 0%, #0B1814 100%)",
                 type: "gradient"
               }
             },
             card: {
               start: {
-                value: "#2C2C2C",
+                value: "#2A3F3F",
                 type: "color"
               },
               end: {
-                value: "#232323",
+                value: "#1F3333",
                 type: "color"
               }
             },
             header: {
               start: {
-                value: "#1A1A1A",
+                value: "#0F1F1C",
                 type: "color"
               },
               end: {
-                value: "#0F0F0F",
+                value: "#0B1814",
                 type: "color"
               }
             },
             text: {
               primary: {
-                value: "#ECEFF1",
+                value: "#E5F5F5",
                 type: "color"
               },
               secondary: {
-                value: "#B0BEC5",
+                value: "#A0C0C0",
                 type: "color"
               },
               onColor: {
-                value: "#FFFFFF",
+                value: "#E5F5F5",
                 type: "color"
               },
               button: {
-                value: "#263238",
+                value: "#2a2a2a",
                 type: "color"
               }
             }

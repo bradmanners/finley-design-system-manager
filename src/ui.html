@@ -295,7 +295,7 @@
           <div class="info-box" style="margin-top: 12px;">
             <strong>What will be imported:</strong>
             <ul>
-              <li>10 color themes (20 with light/dark)</li>
+              <li>4 color themes (8 with light/dark)</li>
               <li>Typography styles (10 sizes)</li>
               <li>Spacing variables (8 sizes)</li>
               <li>Border radius (6 sizes)</li>
@@ -390,7 +390,7 @@
           <div class="info-box">
             <strong>This will create:</strong>
             <ul>
-              <li>20 screen variations (10 themes × 2 modes)</li>
+              <li>8 screen variations (4 themes × 2 modes)</li>
               <li>Positioned side-by-side for comparison</li>
               <li>Same screen spec applied to all themes</li>
             </ul>
@@ -430,9 +430,9 @@
         </div>
 
         <div class="section">
-          <button class="danger" id="generateAllBtn">Generate in All 20 Themes</button>
+          <button class="danger" id="generateAllBtn">Generate in All 8 Variations</button>
           <div class="info-box" style="margin-top: 8px;">
-            ⚠️ This will create 20 frames. Make sure you have enough space in your Figma file.
+            ⚠️ This will create 8 frames. Make sure you have enough space in your Figma file.
           </div>
         </div>
       </div>
@@ -532,11 +532,11 @@
         return;
       }
 
-      if (!confirm('This will create 20 frames (10 themes × 2 modes). Continue?')) {
+      if (!confirm('This will create 8 frames (4 themes × 2 modes). Continue?')) {
         return;
       }
 
-      showStatus('Generating screens in all 20 themes...', 'info');
+      showStatus('Generating screens in all 4 themes...', 'info');
       parent.postMessage({
         pluginMessage: {
           type: 'generate-all-themes',
@@ -567,7 +567,7 @@
       }
 
       if (msg.type === 'all-themes-generated') {
-        showStatus('✅ Generated screens in all 20 theme variations!', 'success');
+        showStatus('✅ Generated screens in all 8 theme variations!', 'success');
       }
 
       if (msg.type === 'error') {

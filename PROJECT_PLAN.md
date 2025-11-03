@@ -9,7 +9,7 @@
 ## 🎯 Project Vision
 
 Create a comprehensive, multi-platform design system for Finley AI products with:
-- 10 unique color themes × 2 modes (light/dark) = 20 variations
+- 4 carefully curated color themes × 2 modes (light/dark) = 8 variations
 - Token-driven design approach (single source of truth)
 - Automated screen and component generation
 - Export to iOS (SwiftUI), Android (Jetpack Compose), and Web (React)
@@ -24,7 +24,7 @@ Create a comprehensive, multi-platform design system for Finley AI products with
 - [x] Built screen generation engine
 - [x] Created 10 color themes with light/dark modes
 - [x] Set up typography, spacing, border radius, shadows
-- [x] Built batch generation (all 20 theme variations)
+- [x] Built batch generation (all 8 theme variations)
 - [x] Integrated Figma MCP for screenshot analysis
 - [x] Created Wealth Navigator app screens (11 screens)
 
@@ -76,7 +76,7 @@ Create a comprehensive, multi-platform design system for Finley AI products with
   - [ ] Add accessibility notes
 
 **Acceptance Criteria:**
-- All 10 themes reviewed and approved
+- All 4 themes reviewed and approved
 - Token structure documented
 - All themes pass accessibility checks
 - Design team sign-off
@@ -268,7 +268,7 @@ Production Apps
 ## 🚀 Success Metrics
 
 ### Phase 1 (Token Refinement):
-- All 10 themes approved
+- All 4 themes approved
 - WCAG AA accessibility compliance
 - Design team satisfaction
 

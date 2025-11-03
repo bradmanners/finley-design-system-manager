@@ -6,7 +6,7 @@ A comprehensive Figma plugin that combines design token management with intellig
 
 ### Token Management
 - One-click import of all design tokens
-- 10 color themes × 2 modes (light/dark) = 20 variations
+- 10 color themes × 2 modes (light/dark) = 8 variations
 - Typography styles (10 sizes)
 - Spacing variables (8 sizes)
 - Border radius variables (6 sizes)
@@ -14,13 +14,13 @@ A comprehensive Figma plugin that combines design token management with intellig
 
 ### Screen Generation
 - Generate screens from JSON specifications
-- Apply any of the 20 theme variations
+- Apply any of the 8 theme variations
 - Choose from pre-built templates
 - Or use custom JSON specs
 - Automatic theme color application
 
 ### Batch Generation
-- Generate the same screen across all 20 theme variations
+- Generate the same screen across all 8 theme variations
 - Side-by-side positioning for easy comparison
 - Perfect for testing theme consistency
 
@@ -47,7 +47,7 @@ A comprehensive Figma plugin that combines design token management with intellig
 
 1. Click **"Import All Design Tokens"**
 2. Wait a few seconds while the plugin creates:
-   - Color variables for all 20 theme variations
+   - Color variables for all 8 theme variations
    - Spacing and border radius variables
    - Text styles for typography
    - Effect styles for shadows
@@ -80,7 +80,7 @@ A comprehensive Figma plugin that combines design token management with intellig
 ### Generate Tab - Create Themed Screens
 
 1. **Select a Theme** from the dropdown
-   - Choose from 20 variations (10 themes × light/dark)
+   - Choose from 8 variations (4 themes × light/dark)
 
 2. **Choose a Screen**
    - Select from pre-built templates:
@@ -100,7 +100,7 @@ A comprehensive Figma plugin that combines design token management with intellig
 1. **Choose a Screen** (template or custom JSON)
 2. **Click "Generate in All 20 Themes"**
 3. Confirm the action (creates 20 frames)
-4. All 20 theme variations will be generated side-by-side
+4. All 8 theme variations will be generated side-by-side
 
 **Use Cases:**
 - Compare how a screen looks across all themes

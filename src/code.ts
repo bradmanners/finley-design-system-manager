@@ -613,14 +613,12 @@ async function createElementWithTheme(parent: FrameNode, element: any, themeData
   }
 }
 
-// Generate screen in all 10 themes
+// Generate screen in all 4 themes
 async function generateAllThemes(screenSpec: any) {
-  figma.notify('Generating in all 10 themes...');
+  figma.notify('Generating in all 4 themes...');
 
   const themes = [
-    'classic-teal-lemon', 'golden-hour', 'ocean-breeze', 'mint-fresh',
-    'vibrant-energy', 'soft-pastels', 'deep-waters', 'sunshine-bright',
-    'balanced-harmony', 'cool-professional'
+    'classic-teal-lemon', 'ocean-breeze', 'soft-pastels', 'cool-professional'
   ];
 
   let xOffset = 0;
@@ -638,7 +636,7 @@ async function generateAllThemes(screenSpec: any) {
     }
   }
 
-  figma.notify('✅ Generated in all 20 theme variations!');
+  figma.notify('✅ Generated in all 8 theme variations!');
 }
 
 // Helper: Get token value from path

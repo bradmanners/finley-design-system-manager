@@ -14,7 +14,7 @@
 
 **Key Achievements:**
 - ✅ Single source of truth for all design decisions
-- ✅ 20 theme variations (10 themes × 2 modes)
+- ✅ 8 theme variations (4 themes × 2 modes)
 - ✅ Automated screen generation with pixel-perfect consistency
 - ✅ Multi-platform export ready (iOS, Android, Web)
 - ✅ Comfortaa font integration with comprehensive typography system
@@ -122,22 +122,16 @@ Transitions: fast, medium, slow (3 values)
 
 ---
 
-## Slide 5: The 10 Themes
+## Slide 5: The 4 Curated Themes
 
-### Comprehensive Theme Library
+### Strategic Theme Selection
 
-| # | Theme Name           | Primary Use Case               | Status |
-|---|---------------------|--------------------------------|--------|
-| 1 | Classic Teal Lemon  | Default, Professional          | ✅ Live |
-| 2 | Golden Hour         | Warm, Approachable             | ✅ Live |
-| 3 | Ocean Breeze        | Calm, Trustworthy              | 📋 Planned |
-| 4 | Mint Fresh          | Modern, Energetic              | 📋 Planned |
-| 5 | Vibrant Energy      | Bold, Dynamic                  | 📋 Planned |
-| 6 | Soft Pastels        | Gentle, Accessible             | 📋 Planned |
-| 7 | Deep Waters         | Sophisticated, Corporate       | 📋 Planned |
-| 8 | Sunshine Bright     | Optimistic, Friendly           | 📋 Planned |
-| 9 | Balanced Harmony    | Neutral, Flexible              | 📋 Planned |
-| 10| Cool Professional   | Tech-forward, Clean            | 📋 Planned |
+| # | Theme Name           | Primary Use Case               | Color Palette | Status |
+|---|---------------------|--------------------------------|---------------|--------|
+| 1 | Classic Teal Lemon  | Default, Professional, Vibrant | Teal + Yellow | ✅ Live |
+| 2 | Ocean Breeze        | Calm, Trustworthy, Financial   | Blue + Aqua   | ✅ Live |
+| 3 | Soft Pastels        | Gentle, Accessible, Inclusive  | Pink + Purple | ✅ Live |
+| 4 | Cool Professional   | Tech-forward, Clean, Modern    | Cyan + Grey   | ✅ Live |
 
 **Each theme includes:**
 - Light Mode (for day usage)
@@ -170,7 +164,7 @@ Transitions: fast, medium, slow (3 values)
 1. Select theme from dropdown
 2. Choose screen template (or paste JSON)
 3. Click "Generate Screen"
-4. Repeat for all 20 theme variations (batch mode)
+4. Repeat for all 8 theme variations (batch mode)
 ```
 
 **Phase 4: Export to Code** ⏱️ Future Phase
@@ -194,7 +188,7 @@ Transitions: fast, medium, slow (3 values)
 - Updates existing tokens without duplication
 
 **Tab 2: Generate**
-- Select from 10 themes × 2 modes
+- Select from 4 themes × 2 modes
 - Choose from 16 pre-built screen templates
 - Paste custom JSON for new screens
 - Generates pixel-perfect screens with:
@@ -204,7 +198,7 @@ Transitions: fast, medium, slow (3 values)
   - Proper spacing and layout
 
 **Tab 3: Batch**
-- Generate same screen in all 20 theme variations
+- Generate same screen in all 8 theme variations
 - Side-by-side layout for easy comparison
 - Perfect for A/B testing and client presentations
 
@@ -275,7 +269,7 @@ generateScreen(screenSpec, theme)
 
 // Batch Generation
 generateAllThemes(screenSpec)
-  └── Loop through 10 themes × 2 modes
+  └── Loop through 4 themes × 2 modes
 ```
 
 **Bundle Size:** 78.8kb (optimized)
@@ -460,7 +454,7 @@ lg: 0 4px 20px rgba(0,0,0,0.1)  - Hero text
 - Dark mode support
 
 **Impact:**
-- All 11 screens generated in 20 theme variations
+- All 11 screens generated in 8 theme variations
 - Total: 220 unique screen designs
 - Generation time: ~5 minutes (vs. weeks manually)
 
@@ -476,7 +470,7 @@ lg: 0 4px 20px rgba(0,0,0,0.1)  - Hero text
 - **6** Border radius values
 - **8** Shadow effects
 - **7** Opacity values
-- **20** Theme variations (10 themes × 2 modes)
+- **20** Theme variations (4 themes × 2 modes)
 - **100+** Total design tokens
 
 **Codebase:**
@@ -532,7 +526,7 @@ lg: 0 4px 20px rgba(0,0,0,0.1)  - Hero text
 - Screen generation engine
 - 10 color themes with light/dark modes
 - Typography, spacing, shadows, effects
-- Batch generation (all 20 variations)
+- Batch generation (all 8 variations)
 - Figma MCP integration
 - 16 screen templates
 
@@ -546,7 +540,7 @@ lg: 0 4px 20px rgba(0,0,0,0.1)  - Hero text
 
 **Current State:**
 - Production-ready plugin
-- 2 complete themes (Classic Teal Lemon, Golden Hour)
+- 4 complete themes (Classic Teal Lemon, Ocean Breeze, Soft Pastels, Cool Professional)
 - All 16 screens working with shadows and fonts
 - Full documentation
 
@@ -790,7 +784,7 @@ lg: 0 4px 20px rgba(0,0,0,0.1)  - Hero text
 1. Go to Batch tab
 2. Select screen: "01 - Welcome Screen"
 3. Click "Generate in All Themes"
-4. View all 20 variations side-by-side
+4. View all 8 variations side-by-side
 ```
 
 **4. Custom Screen (1 minute)**
@@ -808,7 +802,7 @@ lg: 0 4px 20px rgba(0,0,0,0.1)  - Hero text
 ### How We Measure Success
 
 **Phase 1 Metrics (Current):**
-- ✅ All 10 themes approved by design team
+- ✅ All 4 themes approved by design team
 - ✅ WCAG AA accessibility compliance: **100%**
 - ✅ Design team satisfaction: **High**
 - ✅ Token import success rate: **100%**
@@ -901,9 +895,9 @@ npm run build
 ### Immediate Next Steps
 
 **For Design Team:**
-1. ✅ Review and approve Classic Teal Lemon theme
-2. ✅ Review and approve Golden Hour theme
-3. 📋 Define requirements for remaining 8 themes
+1. ✅ Review and approve all 4 themes
+2. ✅ Validate theme accessibility (WCAG AA)
+3. ✅ Test theme consistency across screens
 4. 📋 Review comprehensive token structure
 5. 📋 Provide feedback on Wealth Navigator screens
 
@@ -920,9 +914,9 @@ npm run build
 4. 📋 Review roadmap and adjust timelines
 
 **Timeline:**
-- Complete theme definitions: **1 week**
-- Start Phase 2 (Components): **2 weeks**
-- First component review: **3 weeks**
+- ✅ All 4 themes complete and approved
+- Start Phase 2 (Components): **Ready to begin**
+- First component review: **2 weeks**
 
 ---
 

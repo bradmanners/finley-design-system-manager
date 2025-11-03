@@ -796,7 +796,7 @@
         }
       }
     },
-    "golden-hour": {
+    "ocean-breeze": {
       "light": {
         "color": {
           "background": {
@@ -805,69 +805,69 @@
               "type": "color"
             },
             "secondary": {
-              "value": "#F8F9FA",
+              "value": "#F0F8FF",
               "type": "color"
             }
           },
           "accent": {
             "primary": {
-              "value": "#18BC8C",
+              "value": "#4FC3F7",
               "type": "color"
             },
             "secondary": {
-              "value": "#14A075",
+              "value": "#29B6F6",
               "type": "color"
             }
           },
           "gradient": {
             "accent": {
-              "value": "linear-gradient(135deg, #18BC8C 0%, #14A075 100%)",
+              "value": "linear-gradient(135deg, #4FC3F7 0%, #29B6F6 100%)",
               "type": "gradient"
             },
             "card": {
-              "value": "linear-gradient(135deg, #FFDB01 0%, #FFC700 100%)",
+              "value": "linear-gradient(135deg, #0288D1 0%, #0277BD 100%)",
               "type": "gradient"
             },
             "header": {
-              "value": "linear-gradient(135deg, #FFDB01 0%, #FFC700 100%)",
+              "value": "linear-gradient(135deg, #0288D1 0%, #0277BD 100%)",
               "type": "gradient"
             }
           },
           "card": {
             "start": {
-              "value": "#FFDB01",
+              "value": "#0288D1",
               "type": "color"
             },
             "end": {
-              "value": "#FFC700",
+              "value": "#0277BD",
               "type": "color"
             }
           },
           "header": {
             "start": {
-              "value": "#FFDB01",
+              "value": "#0288D1",
               "type": "color"
             },
             "end": {
-              "value": "#FFC700",
+              "value": "#0277BD",
               "type": "color"
             }
           },
           "text": {
             "primary": {
-              "value": "#2a2a2a",
+              "value": "#1A237E",
               "type": "color"
             },
             "secondary": {
-              "value": "#4A4A00",
+              "value": "#5C6BC0",
               "type": "color"
             },
             "onColor": {
-              "value": "#2a2a2a",
+              "value": "#FFFFFF",
               "type": "color"
             },
             "button": {
-              "value": "#FFFFFF",
+              "value": "#1A237E",
               "type": "color"
             }
           }
@@ -877,73 +877,381 @@
         "color": {
           "background": {
             "primary": {
-              "value": "#3D3D00",
+              "value": "#0D1B2A",
               "type": "color"
             },
             "secondary": {
-              "value": "#4D4D00",
+              "value": "#1B263B",
               "type": "color"
             }
           },
           "accent": {
             "primary": {
-              "value": "#5FD4B0",
+              "value": "#4FC3F7",
               "type": "color"
             },
             "secondary": {
-              "value": "#3EB8AF",
+              "value": "#29B6F6",
               "type": "color"
             }
           },
           "gradient": {
             "accent": {
-              "value": "linear-gradient(135deg, #5FD4B0 0%, #3EB8AF 100%)",
+              "value": "linear-gradient(135deg, #4FC3F7 0%, #29B6F6 100%)",
               "type": "gradient"
             },
             "card": {
-              "value": "linear-gradient(135deg, #2E2E2E 0%, #252525 100%)",
+              "value": "linear-gradient(135deg, #1E3A5F 0%, #1A2F4A 100%)",
               "type": "gradient"
             },
             "header": {
-              "value": "linear-gradient(135deg, #2A2A00 0%, #1F1F00 100%)",
+              "value": "linear-gradient(135deg, #0D1B2A 0%, #0A1628 100%)",
               "type": "gradient"
             }
           },
           "card": {
             "start": {
-              "value": "#2E2E2E",
+              "value": "#1E3A5F",
               "type": "color"
             },
             "end": {
-              "value": "#252525",
+              "value": "#1A2F4A",
               "type": "color"
             }
           },
           "header": {
             "start": {
-              "value": "#2A2A00",
+              "value": "#0D1B2A",
               "type": "color"
             },
             "end": {
-              "value": "#1F1F00",
+              "value": "#0A1628",
               "type": "color"
             }
           },
           "text": {
             "primary": {
-              "value": "#E5E5E5",
+              "value": "#E3F2FD",
               "type": "color"
             },
             "secondary": {
-              "value": "#B0B0B0",
+              "value": "#90CAF9",
               "type": "color"
             },
             "onColor": {
-              "value": "#E5E5E5",
+              "value": "#FFFFFF",
               "type": "color"
             },
             "button": {
-              "value": "#1a1a1a",
+              "value": "#1A237E",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "soft-pastels": {
+      "light": {
+        "color": {
+          "background": {
+            "primary": {
+              "value": "#FFFFFF",
+              "type": "color"
+            },
+            "secondary": {
+              "value": "#FFF9F5",
+              "type": "color"
+            }
+          },
+          "accent": {
+            "primary": {
+              "value": "#FFB3BA",
+              "type": "color"
+            },
+            "secondary": {
+              "value": "#FFDFBA",
+              "type": "color"
+            }
+          },
+          "gradient": {
+            "accent": {
+              "value": "linear-gradient(135deg, #FFB3BA 0%, #FFDFBA 100%)",
+              "type": "gradient"
+            },
+            "card": {
+              "value": "linear-gradient(135deg, #BFBFE6 0%, #D4BFE8 100%)",
+              "type": "gradient"
+            },
+            "header": {
+              "value": "linear-gradient(135deg, #BFBFE6 0%, #D4BFE8 100%)",
+              "type": "gradient"
+            }
+          },
+          "card": {
+            "start": {
+              "value": "#BFBFE6",
+              "type": "color"
+            },
+            "end": {
+              "value": "#D4BFE8",
+              "type": "color"
+            }
+          },
+          "header": {
+            "start": {
+              "value": "#BFBFE6",
+              "type": "color"
+            },
+            "end": {
+              "value": "#D4BFE8",
+              "type": "color"
+            }
+          },
+          "text": {
+            "primary": {
+              "value": "#4A4063",
+              "type": "color"
+            },
+            "secondary": {
+              "value": "#8B7BA8",
+              "type": "color"
+            },
+            "onColor": {
+              "value": "#FFFFFF",
+              "type": "color"
+            },
+            "button": {
+              "value": "#4A4063",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "dark": {
+        "color": {
+          "background": {
+            "primary": {
+              "value": "#2D2438",
+              "type": "color"
+            },
+            "secondary": {
+              "value": "#3D3148",
+              "type": "color"
+            }
+          },
+          "accent": {
+            "primary": {
+              "value": "#FFB3BA",
+              "type": "color"
+            },
+            "secondary": {
+              "value": "#FFDFBA",
+              "type": "color"
+            }
+          },
+          "gradient": {
+            "accent": {
+              "value": "linear-gradient(135deg, #FFB3BA 0%, #FFDFBA 100%)",
+              "type": "gradient"
+            },
+            "card": {
+              "value": "linear-gradient(135deg, #4A3F5C 0%, #514561 100%)",
+              "type": "gradient"
+            },
+            "header": {
+              "value": "linear-gradient(135deg, #2D2438 0%, #261F34 100%)",
+              "type": "gradient"
+            }
+          },
+          "card": {
+            "start": {
+              "value": "#4A3F5C",
+              "type": "color"
+            },
+            "end": {
+              "value": "#514561",
+              "type": "color"
+            }
+          },
+          "header": {
+            "start": {
+              "value": "#2D2438",
+              "type": "color"
+            },
+            "end": {
+              "value": "#261F34",
+              "type": "color"
+            }
+          },
+          "text": {
+            "primary": {
+              "value": "#F5E6FF",
+              "type": "color"
+            },
+            "secondary": {
+              "value": "#D4BFE8",
+              "type": "color"
+            },
+            "onColor": {
+              "value": "#FFFFFF",
+              "type": "color"
+            },
+            "button": {
+              "value": "#4A4063",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "cool-professional": {
+      "light": {
+        "color": {
+          "background": {
+            "primary": {
+              "value": "#FFFFFF",
+              "type": "color"
+            },
+            "secondary": {
+              "value": "#F5F7FA",
+              "type": "color"
+            }
+          },
+          "accent": {
+            "primary": {
+              "value": "#00BCD4",
+              "type": "color"
+            },
+            "secondary": {
+              "value": "#00ACC1",
+              "type": "color"
+            }
+          },
+          "gradient": {
+            "accent": {
+              "value": "linear-gradient(135deg, #00BCD4 0%, #00ACC1 100%)",
+              "type": "gradient"
+            },
+            "card": {
+              "value": "linear-gradient(135deg, #37474F 0%, #263238 100%)",
+              "type": "gradient"
+            },
+            "header": {
+              "value": "linear-gradient(135deg, #37474F 0%, #263238 100%)",
+              "type": "gradient"
+            }
+          },
+          "card": {
+            "start": {
+              "value": "#37474F",
+              "type": "color"
+            },
+            "end": {
+              "value": "#263238",
+              "type": "color"
+            }
+          },
+          "header": {
+            "start": {
+              "value": "#37474F",
+              "type": "color"
+            },
+            "end": {
+              "value": "#263238",
+              "type": "color"
+            }
+          },
+          "text": {
+            "primary": {
+              "value": "#263238",
+              "type": "color"
+            },
+            "secondary": {
+              "value": "#607D8B",
+              "type": "color"
+            },
+            "onColor": {
+              "value": "#FFFFFF",
+              "type": "color"
+            },
+            "button": {
+              "value": "#263238",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "dark": {
+        "color": {
+          "background": {
+            "primary": {
+              "value": "#121212",
+              "type": "color"
+            },
+            "secondary": {
+              "value": "#1E1E1E",
+              "type": "color"
+            }
+          },
+          "accent": {
+            "primary": {
+              "value": "#00BCD4",
+              "type": "color"
+            },
+            "secondary": {
+              "value": "#00ACC1",
+              "type": "color"
+            }
+          },
+          "gradient": {
+            "accent": {
+              "value": "linear-gradient(135deg, #00BCD4 0%, #00ACC1 100%)",
+              "type": "gradient"
+            },
+            "card": {
+              "value": "linear-gradient(135deg, #2C2C2C 0%, #232323 100%)",
+              "type": "gradient"
+            },
+            "header": {
+              "value": "linear-gradient(135deg, #1A1A1A 0%, #0F0F0F 100%)",
+              "type": "gradient"
+            }
+          },
+          "card": {
+            "start": {
+              "value": "#2C2C2C",
+              "type": "color"
+            },
+            "end": {
+              "value": "#232323",
+              "type": "color"
+            }
+          },
+          "header": {
+            "start": {
+              "value": "#1A1A1A",
+              "type": "color"
+            },
+            "end": {
+              "value": "#0F0F0F",
+              "type": "color"
+            }
+          },
+          "text": {
+            "primary": {
+              "value": "#ECEFF1",
+              "type": "color"
+            },
+            "secondary": {
+              "value": "#B0BEC5",
+              "type": "color"
+            },
+            "onColor": {
+              "value": "#FFFFFF",
+              "type": "color"
+            },
+            "button": {
+              "value": "#263238",
               "type": "color"
             }
           }
